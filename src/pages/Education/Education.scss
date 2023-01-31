@@ -1,0 +1,24 @@
+
+.uni-logo{
+  display: inline-block;
+  margin-left: 20pt;
+  width: 20%;
+  img{
+    width:10vw;
+    margin: auto;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+  }
+}
+
+.subjects{
+  display: inline-block;
+  li{
+    line-height: 20px;
+  }
+}
+
+.flex-2-row{
+  display: flex;
+  flex-direction: row;
+}

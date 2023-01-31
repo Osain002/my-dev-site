@@ -1,0 +1,138 @@
+
+
+.main{
+  width: 85%;
+  height: 100vh;
+  float: right;
+  overflow-y: scroll;
+  z-index: 0;
+}
+
+.fill-screen{
+  width:85vw;
+  height: 100vh;
+}
+
+.send-to-back{
+  z-index: -1;
+}
+
+
+.my-name{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 10vw;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  top: 35%;
+  margin-left: 20%;
+  margin-right: auto;
+  z-index: -1;
+  
+
+  .sub-title{
+    position: relative;
+    font-size: 1.7vw;
+    display: inline-block;
+    left:50%;
+  }
+  
+}
+
+
+.medium-container{
+  position:relative;
+  display: block;
+  border: 2px solid orange;
+  width: 60%;
+  height: 50%;
+  left:20%;
+  border-radius: 10pt;
+  background-color: rgba(0, 0, 0, 0.575);
+  backdrop-filter: blur(10px);
+  top: 20%;
+  padding: 10pt;
+  
+  .text{
+    width: 90%;
+    text-align: center;
+  }
+}
+
+
+.scroll-vertical{
+  overflow-y: scroll;
+}
+
+.text-container70{
+  margin:auto;
+  width: 70%;
+}
+
+.text-container80{
+  margin:auto;
+  width: 80%;
+}
+
+.center-horizontal{
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.vertical-margin10{
+  margin-top: 10%;
+
+}
+.vertical-margin20{
+  margin-top: 20%;
+}
+
+.padding_b10{
+  padding-bottom: 10pt;
+}
+
+.padding_l20{
+  padding-left:20pt;
+}
+
+.padding_r20{
+  padding-right: 20pt;
+}
+
+.orange-text{
+  color:orange;
+}
+
+.white-text{
+  color:white;
+}
+
+
+
+.thin-text{
+  font-weight: lighter;
+}
+
+.thick-text{
+  font-weight: bold;
+}
+
+.medium-text{
+  font-size: medium;
+}
+
+.large-text{
+  font-size: 1.5vw;
+}
+
+.larger-text{
+  font-size: 1vw;
+}
+
+.x-large-text{
+  font-size: 1.5vw;
+  margin:1em
+}

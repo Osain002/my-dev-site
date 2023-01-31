@@ -1,0 +1,35 @@
+
+.terminal-main{
+  box-shadow: 15px 15px 15px black;
+  position: relative;
+  color: rgb(47, 255, 54);
+  width: 65%;
+  height: 25vw;
+  background-color: rgba(0, 0, 0, 0.817);
+  border: 1px solid white;
+  border-top: 20px solid rgba(255, 255, 255, 0.732);
+  border-radius: 5px;
+  margin: auto;
+  top:20%;
+  padding: 10pt;
+  font-weight: lighter;
+  font-size: small;
+  font-family:'Courier New', Courier, monospace;
+  line-height: 15px;
+  overflow-y: auto;
+}
+
+input{
+  width:50%;
+  background-color: rgba(8, 0, 51, 0);
+  border: none;
+  color: rgb(47, 255, 54);
+  font-family:'Courier New', Courier, monospace;
+}
+input:focus{
+  outline: none;
+}
+
+.ttt{
+  border: 1px solid green
+}
