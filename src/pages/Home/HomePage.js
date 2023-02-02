@@ -8,14 +8,12 @@ import PageNames_ from '../../Navbar/pageNames';
 import { color_nav } from '../../Navbar/NavbarManager';
 
 
-
 function HomePage() {
-
-  // Color correct
+  // Color correct navbar section
   useEffect(() => {
     color_nav(PageNames_.HOME)
   })
-  
+
   $(document).ready(function () {
     $(".fade").css({opacity: 1})
     $(".main").scroll(function (event) {
@@ -27,13 +25,10 @@ function HomePage() {
     });
   });
 
-
   return (
     <div className='main'>
-
       <NamePage/>
       <Bio />
-
     </div>
   );
 }

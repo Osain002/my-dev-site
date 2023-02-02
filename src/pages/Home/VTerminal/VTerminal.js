@@ -27,26 +27,26 @@ const VTerminal = () => {
   }
 
   // Handle terminal start up process
-  async function terminal_start() {
-    domTools.clear_content(".terminal-main")
-    const timer = ms => new Promise(res => setTimeout(res, ms))
-    const startup = [
-      "starting terminal",
-      "verifying connection",
-      `Hello, ${name}! Welcome to my dev-site! `,
-      "If you would like to find out more about me, simply type 'read -bio' and hit enter!",
-      "Type 'list commands' and hit enter for more!",
-      ``
-    ]
-    for (var i = 0; i < startup.length; i++) {
-      setCurrentText(`<p>${startup[i]}</p>`)
-      await timer(1000)
-    }
-    setReady(true)
-  }
 
   // Start terminal when a name is given
   useEffect(() => {
+    async function terminal_start() {
+      domTools.clear_content(".terminal-main")
+      const timer = ms => new Promise(res => setTimeout(res, ms))
+      const startup = [
+        "starting terminal",
+        "verifying connection",
+        `Hello, ${name}! Welcome to my dev-site! `,
+        "If you would like to find out more about me, simply type 'read -bio' and hit enter!",
+        "Type 'list commands' and hit enter for more!",
+      ]
+      for (var i = 0; i < startup.length; i++) {
+        setCurrentText(`<p>${startup[i]}</p>`)
+        await timer(1000)
+      }
+      setReady(true)
+    }
+  
     if (name) {
       terminal_start()
     }
@@ -70,7 +70,7 @@ const VTerminal = () => {
     }
   }, [command, setReady, setCommand, navigate])
 
-  // Draw page
+  // Draw
   return (
     <div className='terminal-main'>
       <form className='name' onSubmit={e => handle_name_submit(e, "#visitor_name")}>

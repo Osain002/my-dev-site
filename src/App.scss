@@ -18,6 +18,11 @@
 }
 
 
+.pdf-view{
+  width:100%;
+  height: 90vh;
+}
+
 .my-name{
   position: absolute;
   display: flex;
@@ -43,22 +48,29 @@
 
 
 .medium-container{
-  position:relative;
+  
   display: block;
-  border: 2px solid orange;
-  width: 60%;
-  height: 50%;
-  left:20%;
+  border: 1px solid orange;
+  max-width: 50%;
+  max-height: 50vh;
   border-radius: 10pt;
   background-color: rgba(0, 0, 0, 0.575);
   backdrop-filter: blur(10px);
   top: 20%;
   padding: 10pt;
+  margin-left: auto;
+  margin-right: auto;
   
   .text{
     width: 90%;
     text-align: center;
   }
+}
+
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -82,6 +94,14 @@
   text-align: center;
 }
 
+.margin-l10pt{
+  margin-left:10pt;
+}
+
+.margin-l20pt{
+  margin-left:20pt;
+}
+
 .vertical-margin10{
   margin-top: 10%;
 
@@ -90,6 +110,13 @@
   margin-top: 20%;
 }
 
+.margin_t20pt{
+  margin-top: 20pt;
+}
+
+.margin_t40pt{
+  margin-top: 40pt;
+}
 .padding_b10{
   padding-bottom: 10pt;
 }
@@ -110,10 +137,14 @@
   color:white;
 }
 
+.small-text{
+  font-size: small;
+}
+
 
 
 .thin-text{
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .thick-text{
@@ -135,4 +166,27 @@
 .x-large-text{
   font-size: 1.5vw;
   margin:1em
+}
+
+h1{
+  font-weight: 150;
+}
+
+h2{
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+
+.show_button{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2pt;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(158, 103, 0);
+  font-size: small;
+}
+.show_button:hover{
+  background-color: rgb(164, 125, 53);
 }

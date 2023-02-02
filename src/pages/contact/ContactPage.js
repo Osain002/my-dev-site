@@ -11,7 +11,7 @@ function DetailElement() {
     color_nav(PageNames_.CONTACT)
   })
   return (
-    <div className='text-container70 vertical-margin10'>
+    <div className='text-container70'>
       <div className='large-text white-text thin-text'>
         <p>
           If you have any questions, or would just like to get in touch, 
@@ -30,13 +30,13 @@ function DetailElement() {
   )
 }
 
-
-
-
 function ContactPage() {
 
   return (
     <div className='main'>
+      <div className='white-text margin-l20pt'>
+        <h1>Contact me</h1>
+      </div>
       <div className='medium-container'>
         <DetailElement/>
       </div>

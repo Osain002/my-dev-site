@@ -21,8 +21,8 @@ async function display_bio(setCurrentText, setReady) {
 async function list_commands(cmd, setCurrentText, setReady){
   const timer = ms => new Promise(res => setTimeout(res, ms))
   const command_helper = [
-    "<p> Change page: cd 'pagename in lowercase' </p>",
-    "<p> Read file: read -filename. Try -bio or -interests </p>"
+    "<p> Change page: cd 'pagename in lowercase'  e.g cd mathematics</p>",
+    "<p> Read file: read -filename. Try read -bio or read -interests </p>"
   ]
   if (cmd === "commands"){
     for (var i = 0; i < command_helper.length; i++) {
