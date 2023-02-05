@@ -34,7 +34,7 @@ function ContactPage() {
 
   return (
     <div className='main'>
-      <div className='white-text margin-l20pt'>
+      <div className='white-text margin-l20pt page-title'>
         <h1>Contact me</h1>
       </div>
       <div className='medium-container'>

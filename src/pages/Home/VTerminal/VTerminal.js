@@ -72,17 +72,17 @@ const VTerminal = () => {
 
   // Draw
   return (
-    <div className='terminal-main'>
+    <div className='terminal-main small-text'>
       <form className='name' onSubmit={e => handle_name_submit(e, "#visitor_name")}>
         <label>Please enter your name and hit enter to begin: </label>
-        <input type="text" className="terminal-input" id="visitor_name" autoComplete='off'/>
+        <input type="text" className="terminal-input" id="visitor_name" autoComplete='off' placeholder='Click here to type'/>
       </form>
       {
         ready ? 
         <div id="in">
           <form id="term_input" onSubmit={e => handle_command(e)}>
             <label>D:/dev-site/home ~ </label>
-            <input type="text" id="command" autoComplete='off'/>
+            <input type="text" id="command" autoComplete='off' placeholder='Click here to type'/>
           </form>
         </div>
           : null

@@ -1,12 +1,23 @@
 
 
 .main{
-  width: 85%;
+  width: 85vw;
   height: 100vh;
   float: right;
+  overflow-x: none;
   overflow-y: scroll;
   z-index: 0;
+  overflow-x: hidden;
 }
+
+@media only screen and (max-width: 600px){
+  .main{
+    max-width: 75vw;
+    overflow-x: hidden;
+  }
+}
+
+
 
 .fill-screen{
   width:85vw;
@@ -35,17 +46,39 @@
   margin-left: 20%;
   margin-right: auto;
   z-index: -1;
-  
 
-  .sub-title{
-    position: relative;
-    font-size: 1.7vw;
-    display: inline-block;
-    left:50%;
-  }
+
   
 }
 
+.sub-title{
+  position: relative;
+  font-size: 1.7vw;
+  display: inline-block;
+  left:50%;
+}
+
+@media only screen and (max-width: 600px){
+  .sub-title{
+    left:30%;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .page-title{
+    position: relative;
+    left: 10%;
+  }
+}
+
+.page-description{
+  position: relative;
+  width: 80%;
+  top:-2%;
+  left: 20pt;
+  margin-bottom: 20pt;
+}
 
 .medium-container{
   
@@ -67,7 +100,9 @@
   }
 }
 
-
+.hide{
+  display: none;
+}
 .flex-col{
   display: flex;
   flex-direction: column;
@@ -138,7 +173,7 @@
 }
 
 .small-text{
-  font-size: small;
+  font-size: 2vmin;
 }
 
 
@@ -179,14 +214,55 @@ h2{
 
 
 .show_button{
+  position: relative;
   border: 1px solid black;
   border-radius: 5px;
   padding: 2pt;
   text-decoration: none;
   color: black;
-  background-color: rgb(158, 103, 0);
+  background-color: rgba(5, 255, 105, 0.661);
   font-size: small;
+  top:10pt;
+  margin-bottom: 5pt;
+  
 }
 .show_button:hover{
   background-color: rgb(164, 125, 53);
+}
+
+
+
+.list-item{
+  background-image: linear-gradient(gray, rgba(81, 81, 81, 0.632));
+  border: 1px solid rgba(255, 0, 247, 0.215);
+  border-radius: 2pt;
+  width: 40vw;
+  height: 5vh;
+  margin: auto;
+  margin-bottom: 2pt;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10pt;
+  cursor: pointer;
+}
+
+.drop-down{
+  width:40vw;
+  margin: auto;
+  max-height: 50vh;
+  background-color: rgba(40, 40, 40, 0.58);
+  padding: 10pt;
+  margin-bottom: 5pt;
+}
+
+@media only screen and (max-width: 600px){
+  .list-item{
+    height: fit-content;
+    max-height: 5vh;
+    width: 50vw;
+  }
+  .drop-down{
+    max-height: 30vh;
+  }
 }

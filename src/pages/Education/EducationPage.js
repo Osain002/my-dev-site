@@ -17,7 +17,7 @@ function EducationPage() {
 
   return (
     <div className='main'>
-      <div className='white-text margin-l20pt'>
+      <div className='white-text margin-l20pt page-title'>
         <h1>
           Education
         </h1>

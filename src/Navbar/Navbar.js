@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar small-text">
         <div className="my-pic">
           <img src={mypic} width="100%" alt="Unable to load" />
         </div>
