@@ -7,6 +7,7 @@ import Projects from './Projects'
 
 
 const MathematicsPage = () => {
+  
   // Colour correct navbar section
   useEffect(() => {
     color_nav(PageNames_.MATH)

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import '../../App.scss'
 import $ from 'jquery';

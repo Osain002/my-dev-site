@@ -11,6 +11,12 @@
   }
 }
 
+@media only screen and (max-width: 600px){
+  .uni-logo{
+    display: none;
+  }
+}
+
 .subjects{
   display: inline-block;
   li{

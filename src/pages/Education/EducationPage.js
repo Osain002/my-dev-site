@@ -26,36 +26,14 @@ function EducationPage() {
         <h1>
           University
         </h1>
-        <p>I hold a first-class Bsc (hons) degree in Mathematics and Theoretical Physics From The University Of Plymouth, from which I have gained expertise in the following areas:</p>
 
         <div className='flex-2-row'>
           <div className='uni-logo'>
             <img src={unilogo} alt="Error loading"/>
           </div>
-          <div className='subjects'>
-            <ul>
-              <li>
-                Calculus and Analysis
-              </li>
-              <li>
-                Differential Geometry
-              </li>
-              <li>
-                Ordinary and Partial Differential Equations
-              </li>
-              <li>
-                Classical and Quantum Mechanics
-              </li>
-              <li>
-                Mathematical Programming
-              </li>
-              <li>
-                Electrodynamics and Special Relativity
-              </li>
-              <li>
-                Probability Theory
-              </li>
-            </ul>
+          <div className='margin-l20pt'>
+          <p>I hold a first-class BSc (Hons) degree in Mathematics and Theoretical Physics from the University of Plymouth, with expertise in calculus, differential geometry, differential equations, mechanics, programming, electrodynamics, relativity, and probability theory. My academic background has equipped me with strong analytical and problem-solving skills. I am committed to excellence and keen to apply my knowledge and skills to a professional setting.</p>
+
           </div>
         </div>
         <div>
